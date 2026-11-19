@@ -45,6 +45,8 @@ L’IA a fait les essais suivants dans Safari sur ordinateur, dans la boutique l
 
 La boutique locale affiche la confirmation à l’écran. Une transmission à la boutique ou au livreur ne peut pas être contrôlée avec cette version.
 
+---
+
 ## Réponse à Madame Roussel
 
 Bonjour Madame Roussel,
@@ -53,5 +55,5 @@ J’ai corrigé la confirmation de commande. Elle reprend maintenant le créneau
 
 Merci de m’avoir signalé le problème.
 
-Bien cordialement,
+Bien cordialement,\
 Yann

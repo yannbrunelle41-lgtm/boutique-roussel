@@ -11,10 +11,18 @@ export function sauverPanier(lignes, codePromo) {
 
 // Relit le panier enregistré, ou un panier vide.
 export function chargerPanier() {
+  const panierVide = { lignes: [], codePromo: "" };
   const brut = localStorage.getItem(CLE);
-  if (!brut) {
-    return { lignes: [], codePromo: "" };
+  if (!brut) return panierVide;
+
+  let donnees;
+  try {
+    donnees = JSON.parse(brut);
+  } catch (erreur) {
+    if (!(erreur instanceof SyntaxError)) throw erreur;
+    return panierVide;
   }
-  const donnees = JSON.parse(brut);
-  return { lignes: donnees.lignes || donnees, codePromo: donnees.codePromo || "" };
+  if (donnees?.version !== VERSION || !Array.isArray(donnees.lignes)) return panierVide;
+
+  return { lignes: donnees.lignes, codePromo: donnees.codePromo || "" };
 }

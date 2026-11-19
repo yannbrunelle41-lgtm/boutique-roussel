@@ -61,6 +61,8 @@ Pour ce ticket, l’IA a effectué les vérifications suivantes.
 
 **Vérification restante en affichage mobile.** Rejouer les quatre saisies du tableau et contrôler le montant de la remise.
 
+---
+
 ## Réponse à Madame Roussel
 
 Bonjour Madame Roussel,
@@ -71,5 +73,5 @@ Merci de m’avoir signalé le problème.
 
 Bonne journée.
 
-Bien cordialement,  
+Bien cordialement,\
 Yann

@@ -48,6 +48,8 @@ L’IA a aussi rejoué les essais dans Safari sur ordinateur après la correctio
 - **Ticket 2.** Les clics sur `+` et `−` changent la quantité d’un seul bouquet à la fois. Le dernier clic sur `−` retire la ligne.
 - **Ticket 3.** « Le petit mot » apparaît sous « Toutes », « Merci » et « Pour le plaisir ». Il reste absent sous « Amour ».
 
+---
+
 ## Réponse à Madame Roussel
 
 Bonjour Madame Roussel,
@@ -56,5 +58,5 @@ J’ai corrigé le problème avec les tailles dans le panier. Si vous ajoutez un
 
 Merci de m’avoir signalé le problème.
 
-Bien cordialement,
+Bien cordialement,\
 Yann

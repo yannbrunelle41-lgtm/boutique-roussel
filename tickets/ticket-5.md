@@ -39,6 +39,8 @@ L’IA a réalisé les essais suivants dans Safari sur ordinateur.
 - **Ticket 3.** « Le petit mot » apparaît sous « Toutes », « Merci » et « Pour le plaisir ». Il est absent sous « Amour ».
 - **Ticket 4.** Une petite Pivoine poudrée et une grande restent sur deux lignes. Ajouter une autre grande augmente seulement la quantité de la ligne « Grand ».
 
+---
+
 ## Réponse à Madame Roussel
 
 Bonjour Madame Roussel,
@@ -47,5 +49,5 @@ J’ai corrigé le bouton « Supprimer » du panier. Il retire maintenant seulem
 
 Merci de m’avoir signalé le problème.
 
-Bien cordialement,
+Bien cordialement,\
 Yann

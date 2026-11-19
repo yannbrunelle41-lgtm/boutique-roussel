@@ -42,6 +42,8 @@ L’IA a réalisé les essais suivants dans Safari sur ordinateur.
 
 Dans le terminal, l’IA a aussi vérifié le seuil à 59,99 €, 60,00 € et 60,01 €. À Tours, la livraison reste payante à 59,99 € et devient gratuite à partir de 60,00 €.
 
+---
+
 ## Réponse à Madame Roussel
 
 Bonjour Madame Roussel,
@@ -50,5 +52,5 @@ J’ai corrigé le calcul qui facturait la livraison sur une commande de 60 €.
 
 Merci de m’avoir signalé le problème.
 
-Bien cordialement,
+Bien cordialement,\
 Yann

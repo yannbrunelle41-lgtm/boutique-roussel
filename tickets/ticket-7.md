@@ -58,6 +58,8 @@ Le récapitulatif affiche la part des cartes déjà incluse dans le sous-total. 
 
 Dans le terminal, l’IA a vérifié que deux textes de 301 caractères qui diffèrent seulement par leur dernière lettre restent distincts et entiers après la sauvegarde et la relecture du panier. Elle a aussi vérifié le prix avec deux exemplaires du même bouquet et rejoué les contrôles des tickets 1 à 6.
 
+---
+
 ## Réponse à Madame Roussel
 
 Bonjour Madame Roussel,
@@ -68,5 +70,5 @@ Pouvez-vous prévenir votre imprimeur de ce changement ? Pour les messages longs
 
 Merci de m’avoir signalé le problème.
 
-Bien cordialement,
+Bien cordialement,\
 Yann

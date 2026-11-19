@@ -39,6 +39,8 @@ L’IA a exécuté les modules de la boutique dans le terminal, avec une simulat
 
 **Vérification restante dans Safari.** L’écran d’authentification a bloqué l’accès au navigateur. Le menu des jours reste à vérifier dans la boutique ouverte dans Safari.
 
+---
+
 ## Réponse à Madame Roussel
 
 Bonjour Madame Roussel,
@@ -47,5 +49,5 @@ J’ai corrigé le décalage dans les jours de livraison. Pour une commande pass
 
 Merci de m’avoir signalé le problème.
 
-Bien cordialement,
+Bien cordialement,\
 Yann

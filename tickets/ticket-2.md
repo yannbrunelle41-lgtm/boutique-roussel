@@ -1,9 +1,10 @@
 # Ticket 2 — Le bouton + ajoute plusieurs bouquets
 
-Ticket 2 : le bouton +
-Bonjour, quand une cliente veut plusieurs bouquets identiques et clique sur le +, le panier en ajoute
-plusieurs d’un coup, et c’est de pire en pire à chaque clic. Une cliente s’est retrouvée avec une quinzaine
-de bouquets. Heureusement qu’elle a vu le total avant de commander !
+> Ticket 2 : le bouton +
+>
+> Bonjour, quand une cliente veut plusieurs bouquets identiques et clique sur le +, le panier en ajoute
+> plusieurs d’un coup, et c’est de pire en pire à chaque clic. Une cliente s’est retrouvée avec une quinzaine
+> de bouquets. Heureusement qu’elle a vu le total avant de commander !
 
 ## Reproduction avant correction
 
@@ -43,6 +44,8 @@ Après chaque correctif, je vérifie que le problème est résolu et que les fon
 - **Suppression.** En supprimant la première ligne d’un panier qui en contenait deux, Safari a retiré les deux lignes. L’IA a reproduit ce comportement dans `js/panier.js`, dont le code est identique à la version précédente. Ce problème est couvert par le ticket 5.
 - **Ticket 1 rejoué dans Safari sur ordinateur.** Les quatre variantes de `NOEL10` du ticket 1 ont chacune appliqué 3,49 € de remise sur 34,90 €. Le code `INCONNU` a été refusé.
 
+---
+
 ## Réponse à Madame Roussel
 
 Bonjour Madame Roussel,
@@ -51,6 +54,5 @@ J’ai corrigé le bouton + du panier. Chaque clic ajoute maintenant un seul bou
 
 Merci de m’avoir signalé le problème.
 
-Bien cordialement,
-
+Bien cordialement,\
 Yann

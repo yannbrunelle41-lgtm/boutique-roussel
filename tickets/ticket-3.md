@@ -37,6 +37,8 @@ L’IA a réalisé les essais suivants dans Safari sur ordinateur.
 - **Ticket 1.** Les quatre saisies de `NOEL10` du ticket 1 donnent chacune une remise de 3,49 € sur un panier de 34,90 €. Le code `INCONNU` est refusé.
 - **Ticket 2.** En partant d’un bouquet, deux clics sur `+` font passer la quantité à 2 puis à 3. Trois clics sur `−` la ramènent à 2, puis à 1, avant de retirer la ligne.
 
+---
+
 ## Réponse à Madame Roussel
 
 Bonjour Madame Roussel,
@@ -45,5 +47,5 @@ J’ai corrigé le classement du bouquet « Le petit mot ». Il apparaît mainte
 
 Merci de m’avoir signalé le problème.
 
-Bien cordialement,
+Bien cordialement,\
 Yann
