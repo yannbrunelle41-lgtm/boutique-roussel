@@ -1,0 +1,62 @@
+{
+  "bouquets": [
+    {
+      "id": "pivoine-poudree",
+      "nom": "Pivoine poudrée",
+      "description": "Pivoines roses, eucalyptus et gypsophile.",
+      "occasions": ["anniversaire", "plaisir"],
+      "prix": 34.9
+    },
+    {
+      "id": "champetre",
+      "nom": "Champêtre",
+      "description": "Fleurs des champs de saison, cueillies dans la Loire.",
+      "occasions": ["plaisir", "merci"],
+      "prix": 29.9
+    },
+    {
+      "id": "roses-rouges",
+      "nom": "Roses rouges",
+      "description": "Douze roses rouges et leur feuillage.",
+      "occasions": ["amour", "anniversaire"],
+      "prix": 44.9
+    },
+    {
+      "id": "soleil-automne",
+      "nom": "Soleil d'automne",
+      "description": "Tournesols, chrysanthèmes orangés et branches de baies.",
+      "occasions": ["merci", "plaisir"],
+      "prix": 32.4
+    },
+    {
+      "id": "blanc-pur",
+      "nom": "Blanc pur",
+      "description": "Lys, roses blanches et lisianthus.",
+      "occasions": ["mariage", "merci"],
+      "prix": 38.9
+    },
+    {
+      "id": "petit-mot",
+      "nom": "Le petit mot",
+      "description": "Un petit bouquet rond pour dire merci.",
+      "occasions": ["Merci", "plaisir"],
+      "prix": 19.9
+    }
+  ],
+  "occasions": [
+    { "id": "anniversaire", "libelle": "Anniversaire" },
+    { "id": "amour", "libelle": "Amour" },
+    { "id": "merci", "libelle": "Merci" },
+    { "id": "mariage", "libelle": "Mariage" },
+    { "id": "plaisir", "libelle": "Pour le plaisir" }
+  ],
+  "options": {
+    "tailles": [
+      { "id": "petit", "libelle": "Petit", "supplement": 0 },
+      { "id": "moyen", "libelle": "Moyen", "supplement": 8.2 },
+      { "id": "grand", "libelle": "Grand", "supplement": 15.6 }
+    ],
+    "vase": { "libelle": "Vase en verre", "prix": 12.9 },
+    "carte": { "libelle": "Carte avec votre message", "prix": 2.5, "longueurMax": 150 }
+  }
+}

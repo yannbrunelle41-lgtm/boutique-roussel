@@ -1,0 +1,13 @@
+{
+  "seuilGratuite": 60,
+  "heureLimite": 14,
+  "joursFermes": [0],
+  "moments": [
+    { "id": "matin", "libelle": "Matin" },
+    { "id": "apres-midi", "libelle": "Après-midi" }
+  ],
+  "zones": [
+    { "nom": "Tours", "codesPostaux": ["37000", "37100", "37200"], "frais": 5.9 },
+    { "nom": "Agglomération de Tours", "codesPostaux": ["37170", "37300", "37540", "37550"], "frais": 7.9 }
+  ]
+}

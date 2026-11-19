@@ -1,0 +1,4 @@
+[
+  { "code": "NOEL10", "type": "pourcentage", "valeur": 10, "minimum": 0 },
+  { "code": "BIENVENUE5", "type": "montant", "valeur": 5, "minimum": 30 }
+]
