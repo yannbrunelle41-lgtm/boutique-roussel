@@ -8,7 +8,7 @@ import { chargerReglesLivraison, fraisLivraison, joursDeLivraison, momentsDeLivr
 import { lignesPanier, remplacerLignes, ajouterAuPanier, changerQuantite, supprimerLigne, viderPanier } from "./panier.js";
 import { sauverPanier, chargerPanier } from "./stockage.js";
 import { preparerComposition, ouvrirComposition } from "./composition.js";
-import { afficherCatalogue, afficherPanier, afficherJours, afficherMoments, afficherRecap } from "./affichage.js";
+import { afficherCatalogue, preparerPanier, afficherPanier, afficherJours, afficherMoments, afficherRecap } from "./affichage.js";
 
 // Ce que la cliente a saisi en dehors du panier.
 const etat = { codePromo: "", codePostal: "", catalogue: null };
@@ -32,6 +32,7 @@ async function demarrer() {
   preparerFiltres(catalogue.occasions);
   afficherCatalogue(catalogue.bouquets, "toutes", ouvrirComposition);
   preparerComposition(catalogue.options, quandAjoute);
+  preparerPanier(quandActionPanier);
   afficherJours(joursDeLivraison(maintenant()));
   afficherMoments(momentsDeLivraison());
 
@@ -92,7 +93,7 @@ function appliquerCode(evenement) {
 // Recalcule et réaffiche le panier et le récapitulatif.
 function rafraichir() {
   const lignes = lignesPanier();
-  afficherPanier(lignes, quandActionPanier);
+  afficherPanier(lignes);
 
   const montant = sousTotal(lignes);
   let remise = 0;

@@ -39,7 +39,7 @@ function decrireOptions(options) {
 }
 
 // Affiche les lignes du panier avec leurs boutons.
-export function afficherPanier(lignes, surAction) {
+export function afficherPanier(lignes) {
   const liste = document.querySelector("#panier-liste");
   liste.replaceChildren();
   document.querySelector("#panier-vide").hidden = lignes.length > 0;
@@ -64,9 +64,11 @@ export function afficherPanier(lignes, surAction) {
     );
     liste.append(element);
   });
+}
 
-  // Les boutons + , − et Supprimer de toutes les lignes.
-  liste.addEventListener("click", (evenement) => {
+// Branche une seule fois les boutons +, − et Supprimer du panier.
+export function preparerPanier(surAction) {
+  document.querySelector("#panier-liste").addEventListener("click", (evenement) => {
     const cible = evenement.target.closest("button[data-action]");
     if (!cible) return;
     surAction(cible.dataset.action, Number(cible.dataset.index));
