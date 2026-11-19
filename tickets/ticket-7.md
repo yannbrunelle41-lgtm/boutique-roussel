@@ -68,5 +68,5 @@ Pouvez-vous prévenir votre imprimeur de ce changement ? Pour les messages longs
 
 Merci de m’avoir signalé le problème.
 
-Bien cordialement,\
+Bien cordialement,
 Yann

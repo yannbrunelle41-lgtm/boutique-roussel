@@ -56,5 +56,5 @@ J’ai corrigé le problème avec les tailles dans le panier. Si vous ajoutez un
 
 Merci de m’avoir signalé le problème.
 
-Bien cordialement,\
+Bien cordialement,
 Yann

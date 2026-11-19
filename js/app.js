@@ -114,7 +114,7 @@ function rafraichir() {
 function commander() {
   const message = document.querySelector("#message-commande");
   const jour = document.querySelector("#jour-livraison");
-  const moment = document.querySelector("input[name=moment]");
+  const moment = document.querySelector("input[name=moment]:checked");
   if (lignesPanier().length === 0) {
     message.textContent = "Votre panier est vide.";
     return;

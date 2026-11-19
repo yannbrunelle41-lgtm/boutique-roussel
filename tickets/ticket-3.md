@@ -45,5 +45,5 @@ J’ai corrigé le classement du bouquet « Le petit mot ». Il apparaît mainte
 
 Merci de m’avoir signalé le problème.
 
-Bien cordialement,\
+Bien cordialement,
 Yann
