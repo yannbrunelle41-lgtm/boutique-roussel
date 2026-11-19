@@ -23,7 +23,7 @@ export function ajouterAuPanier(bouquetId, options) {
   if (existante) {
     existante.quantite += 1;
   } else {
-    lignes.push({ bouquetId, options, quantite: 1 });
+    lignes.push({ bouquetId, options: { ...options }, quantite: 1 });
   }
 }
 
