@@ -39,7 +39,7 @@ export function changerQuantite(index, ecart) {
 
 // Supprime une ligne du panier.
 export function supprimerLigne(index) {
-  lignes.splice(index);
+  lignes.splice(index, 1);
 }
 
 // Vide le panier (après la commande).
