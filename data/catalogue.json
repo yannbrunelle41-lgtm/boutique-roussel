@@ -39,7 +39,7 @@
       "id": "petit-mot",
       "nom": "Le petit mot",
       "description": "Un petit bouquet rond pour dire merci.",
-      "occasions": ["Merci", "plaisir"],
+      "occasions": ["merci", "plaisir"],
       "prix": 19.9
     }
   ],
