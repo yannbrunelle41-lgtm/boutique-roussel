@@ -36,6 +36,10 @@ Quand le panier est actualisé, les boutons sont recréés, mais la liste qui le
 
 L’IA a déplacé l’installation de l’écouteur dans `preparerPanier`, appelée une seule fois au démarrage par `js/app.js`. `afficherPanier` continue de recréer les lignes et leurs boutons. Le même écouteur traite les clics sur `+`, `−` et « Supprimer ».
 
+### Revue après résolution
+
+L’IA m’a proposé d’ajouter un écouteur à chaque bouton quand il est recréé. Cette solution fonctionnerait aussi. J’ai gardé un seul écouteur sur la liste, car il peut gérer les trois boutons même quand les lignes changent.
+
 ## Vérification après correction
 
 Après chaque correctif, je vérifie que le problème est résolu et que les fonctions liées au changement marchent toujours. Je refais aussi les tests des tickets déjà corrigés pour vérifier que les problèmes ne reviennent pas.

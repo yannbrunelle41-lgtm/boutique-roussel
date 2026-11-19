@@ -27,6 +27,10 @@ Je m’attends à voir le lundi 16 novembre en premier et le samedi 21 novembre 
 
 Dans `js/livraison.js`, l’IA a remplacé la conversion en UTC par une date construite avec l’année, le mois et le jour locaux. Dans `js/affichage.js`, la date est désormais lue à minuit dans le fuseau local pour produire le libellé. Le jour calculé et le jour affiché correspondent.
 
+### Revue après résolution
+
+L’IA m’a proposé de décaler d’un jour le libellé affiché. J’ai écarté cette idée, car le décalage dépend du fuseau et la date enregistrée pourrait rester fausse. J’ai gardé une date locale du calcul jusqu’à l’affichage.
+
 ## Vérification après correction
 
 Après chaque correctif, je vérifie que le problème est résolu et que les fonctions liées au changement marchent toujours. Je refais aussi les tests des tickets déjà corrigés pour vérifier que les problèmes ne reviennent pas.

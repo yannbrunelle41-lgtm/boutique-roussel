@@ -28,6 +28,10 @@ Je m’attends à lire « après-midi ». Dans Safari, « Après-midi » était 
 
 L’IA a ajouté `:checked` à la recherche du bouton dans `commander`. Cela permet de lire le bouton coché au moment de la confirmation. Le reste de la vérification de la commande suit les mêmes étapes.
 
+### Revue après résolution
+
+L’IA m’a proposé de mémoriser le créneau dans une variable à chaque changement. J’ai préféré lire le bouton coché au moment de commander, car le choix est déjà dans le formulaire.
+
 ## Vérification après correction
 
 Après chaque correctif, je vérifie que le problème est résolu et que les fonctions liées au changement marchent toujours. Je refais aussi les tests des tickets déjà corrigés pour vérifier que les problèmes ne reviennent pas.

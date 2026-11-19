@@ -27,6 +27,10 @@ Je m’attends à voir « Offerte » pour la livraison, puisque le sous-total at
 
 Les nombres à virgule peuvent donner de petits écarts de calcul en JavaScript. Ici, cet écart faisait passer le sous-total juste en dessous du seuil. L’IA a utilisé la fonction `arrondir` déjà présente dans `js/outils.js` pour arrondir le sous-total au centime dans `js/prix.js`. La livraison compare maintenant le seuil au même montant que celui affiché.
 
+### Revue après résolution
+
+L’IA m’a proposé d’arrondir le montant seulement avant la comparaison avec le seuil de livraison. J’ai préféré arrondir le sous-total dans le calcul des prix. La remise, la livraison et le récapitulatif utilisent ainsi le même montant au centime.
+
 ## Vérification après correction
 
 Après chaque correctif, je vérifie que le problème est résolu et que les fonctions liées au changement marchent toujours. Je refais aussi les tests des tickets déjà corrigés pour vérifier que les problèmes ne reviennent pas.

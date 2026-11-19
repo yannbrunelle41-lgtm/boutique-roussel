@@ -30,6 +30,10 @@ Le formulaire garde ses choix dans un objet appelé `options`. Le panier conserv
 
 L’IA a modifié `ajouterAuPanier` dans `js/panier.js`. À chaque nouvelle ligne, le panier garde une copie des options. Les changements dans le formulaire ne touchent plus les bouquets déjà ajoutés. Deux bouquets avec les mêmes choix se regroupent toujours sur la même ligne.
 
+### Revue après résolution
+
+L’IA m’a proposé de copier les options dans le formulaire avant de les envoyer. J’ai préféré faire la copie au moment de créer la ligne du panier. C’est à cet endroit que les choix doivent être gardés, quel que soit l’endroit d’où vient l’ajout.
+
 ## Vérification après correction
 
 Après chaque correctif, je vérifie que le problème est résolu et que les fonctions liées au changement marchent toujours. Je refais aussi les tests des tickets déjà corrigés pour vérifier que les problèmes ne reviennent pas.

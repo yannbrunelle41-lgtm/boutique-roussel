@@ -27,6 +27,10 @@ Je m’attends à retrouver les deux derniers bouquets. Dans Safari, un seul cli
 
 L’IA a remplacé `lignes.splice(index)` par `lignes.splice(index, 1)` dans `supprimerLigne`. Le `1` indique qu’une seule ligne doit être retirée. Cette fonction sert aussi quand le bouton `−` fait tomber la quantité d’une ligne à zéro.
 
+### Revue après résolution
+
+L’IA m’a proposé de recréer la liste en gardant toutes les lignes sauf celle à supprimer. J’ai retenu `splice(index, 1)`, car le panier utilise déjà cette fonction et il suffit de préciser le nombre de lignes à retirer.
+
 ## Vérification après correction
 
 Après chaque correctif, je vérifie que le problème est résolu et que les fonctions liées au changement marchent toujours. Je refais aussi les tests des tickets déjà corrigés pour vérifier que les problèmes ne reviennent pas.

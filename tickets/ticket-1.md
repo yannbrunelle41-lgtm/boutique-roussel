@@ -49,6 +49,10 @@ Le cahier des charges prévoit une remise de 10 % sur le sous-total, que le code
 
 À ma demande, l’IA a modifié `appliquerPromo`. Le correctif utilise `trim()` pour retirer les espaces avant et après le code, puis `toUpperCase()` pour le convertir en majuscules avant la comparaison. La même fonction sert lors de la saisie du code et lors du recalcul du panier.
 
+### Revue après résolution
+
+L’IA m’a proposé de nettoyer le code promo dans le formulaire. J’ai préféré le faire dans `appliquerPromo`, car cette fonction est aussi appelée quand le panier est recalculé.
+
 ## Vérification après correction
 
 Après chaque correctif, je vérifie que le problème est résolu et que les fonctions liées au changement marchent toujours. Je refais aussi les tests des tickets déjà corrigés pour vérifier que les problèmes ne reviennent pas.
@@ -59,7 +63,7 @@ Pour ce ticket, l’IA a effectué les vérifications suivantes.
 - **Montants relevés dans Safari.** Avec trois Pivoines poudrées en taille Petit, le sous-total est de 104,70 €. En appliquant `NOEL10` suivi d’un espace, la remise affichée est de 10,47 € et le total avant livraison est de 94,23 €.
 - **Test du module.** Sur un sous-total de 50 €, les variantes valides donnent 5 € de remise, y compris avec des espaces des deux côtés. Le seuil de 30 € de `BIENVENUE5` a aussi été vérifié.
 
-**Vérification restante en affichage mobile.** Rejouer les quatre saisies du tableau et contrôler le montant de la remise.
+**Safari en affichage mobile (iPhone SE, 375 × 667).** Les quatre saisies du tableau appliquent chacune une remise de 3,49 € sur un bouquet à 34,90 €, soit un total de 31,41 € avant livraison. Le code `INCONNU` est refusé.
 
 ---
 

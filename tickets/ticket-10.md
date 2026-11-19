@@ -25,7 +25,11 @@ L’IA a reproduit le calcul dans le terminal avec cette sauvegarde simulée. L�
 
 ## Cause et correctif
 
-Le problème vient de la lecture du panier dans `js/stockage.js`. L’IA a ajouté une vérification du numéro de version et du format de la liste. Si la sauvegarde est ancienne ou illisible, la boutique démarre avec un panier vide. Si le panier vient de la version 2 et que la liste a le bon format, la boutique restaure les bouquets et le code promo. Afficher 0 € à la place de `NaN` aurait laissé la ligne incompatible dans le panier.
+Le problème vient de la lecture du panier dans `js/stockage.js`. L’IA a ajouté une vérification du numéro de version et du format de la liste. Si la sauvegarde est ancienne ou illisible, la boutique démarre avec un panier vide. Si le panier vient de la version 2 et que la liste a le bon format, la boutique restaure les bouquets et le code promo.
+
+### Revue après résolution
+
+L’IA m’a proposé d’afficher 0 € à la place de « NaN € ». J’ai écarté cette idée, car la ligne incompatible serait restée dans le panier. J’ai retenu la vérification de la version au chargement, comme le prévoit le cahier des charges.
 
 ## Vérification après correction
 
@@ -34,7 +38,7 @@ Après chaque correctif, je vérifie que le problème est résolu et que les fon
 - **Ticket 10.** Dans le terminal, l’IA a démarré la boutique avec un stockage simulé contenant un ancien panier. La boutique a affiché un sous-total de 0,00 € et enregistré un panier vide en version 2. Une sauvegarde illisible est aussi écartée. Dans Safari, un panier créé avec la version actuelle a gardé le bouquet et sa remise de 3,49 € après rechargement.
 - **Tickets 1 à 9.** L’IA a rejoué dans le terminal les contrôles des promotions, des quantités, des filtres, des tailles, de la suppression, de la livraison gratuite, du prix des cartes et de la confirmation du créneau. Dans Safari, elle a aussi vérifié que la liste des jours du ticket 9 va bien du lundi 16 au samedi 21 novembre.
 
-Le scénario avec l’ancienne sauvegarde reste à rejouer dans Safari.
+**Ancien panier dans Safari.** L’IA a chargé une sauvegarde simulée sans numéro de version et contenant un bouquet sans quantité. La boutique a ouvert un panier vide avec un sous-total de 0,00 €, sans afficher « NaN € ». L’ajout d’une Pivoine poudrée a ensuite donné un sous-total de 34,90 €.
 
 ---
 

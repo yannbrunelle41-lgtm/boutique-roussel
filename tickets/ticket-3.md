@@ -27,6 +27,10 @@ Le bouquet doit apparaître avec les deux filtres. Dans Safari, il était visibl
 
 Le filtre compare l’identifiant de l’occasion choisie avec ceux enregistrés pour chaque bouquet. Pour JavaScript, `Merci` et `merci` sont deux valeurs différentes. La correction consiste à écrire `merci` en minuscules dans la fiche de « Le petit mot » dans `data/catalogue.json`.
 
+### Revue après résolution
+
+L’IA m’a proposé de convertir toutes les occasions en minuscules au moment du filtrage. J’ai préféré corriger l’identifiant du bouquet dans le catalogue, car le filtre fonctionne déjà avec les autres bouquets.
+
 ## Vérification après correction
 
 Après chaque correctif, je vérifie que le problème est résolu et que les fonctions liées au changement marchent toujours. Je refais aussi les tests des tickets déjà corrigés pour vérifier que les problèmes ne reviennent pas.
