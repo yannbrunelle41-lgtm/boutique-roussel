@@ -19,7 +19,22 @@ export function trouverTaille(id) {
   return catalogue.options.tailles.find((taille) => taille.id === id);
 }
 
-// Prix d'un exemplaire : bouquet + supplément de taille + vase + carte.
+// Une carte par tranche de caractères, avec au moins une carte si l’option est choisie.
+export function nombreCartes(message) {
+  const longueur = Array.from(message ?? "").length;
+  return Math.max(1, Math.ceil(longueur / catalogue.options.carte.longueurMax));
+}
+
+export function detailCartes(lignes) {
+  const nombre = lignes.reduce((total, ligne) => {
+    if (!ligne.options?.carte) return total;
+    return total + nombreCartes(ligne.options.message) * ligne.quantite;
+  }, 0);
+  const prixParCarte = catalogue.options.carte.prix;
+  return { nombre, prixParCarte, montant: nombre * prixParCarte };
+}
+
+// Prix d'un exemplaire : bouquet + supplément de taille + vase + cartes.
 export function prixUnitaire(ligne) {
   const bouquet = trouverBouquet(ligne.bouquetId);
   const options = ligne.options || {};
@@ -27,7 +42,7 @@ export function prixUnitaire(ligne) {
   let prix = bouquet ? bouquet.prix : 0;
   if (taille) prix += taille.supplement;
   if (options.vase) prix += catalogue.options.vase.prix;
-  if (options.carte) prix += catalogue.options.carte.prix;
+  if (options.carte) prix += nombreCartes(options.message) * catalogue.options.carte.prix;
   return prix;
 }
 

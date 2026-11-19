@@ -118,8 +118,15 @@ export function afficherMoments(moments) {
 }
 
 // Affiche le récapitulatif de la commande.
-export function afficherRecap({ montant, remise, frais, total }) {
+export function afficherRecap({ montant, cartes, remise, frais, total }) {
   document.querySelector("#recap-sous-total").textContent = formaterPrix(montant);
+  const detail = document.querySelector("#recap-cartes");
+  const avecCartes = cartes.nombre > 0;
+  document.querySelector("#recap-cartes-libelle").hidden = !avecCartes;
+  detail.hidden = !avecCartes;
+  detail.textContent = avecCartes
+    ? cartes.nombre + " × " + formaterPrix(cartes.prixParCarte) + " = " + formaterPrix(cartes.montant)
+    : "";
   document.querySelector("#recap-remise").textContent = remise ? "− " + formaterPrix(remise) : formaterPrix(0);
   let livraison = "Saisir un code postal";
   if (frais === 0) livraison = "Offerte";

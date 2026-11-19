@@ -61,7 +61,8 @@
               </label>
               <div id="zone-message" hidden>
                 <label for="message-carte" class="block font-bold">Votre message</label>
-                <textarea id="message-carte" rows="3" class="mt-1 w-full rounded border border-roussel-gris bg-white p-2"></textarea>
+                <textarea id="message-carte" rows="3" aria-describedby="nombre-cartes" class="mt-1 w-full rounded border border-roussel-gris bg-white p-2"></textarea>
+                <p id="nombre-cartes" class="text-sm text-roussel-gris" aria-live="polite"></p>
               </div>
             </fieldset>
             <p class="text-lg">Prix : <strong id="prix-composition" class="text-roussel-rose" aria-live="polite"></strong></p>
@@ -106,6 +107,8 @@
           <h2 id="titre-recap" class="mb-4 text-2xl font-bold text-roussel-vert">Récapitulatif</h2>
           <dl class="grid grid-cols-2 gap-y-2" aria-live="polite">
             <dt>Sous-total</dt><dd id="recap-sous-total" class="text-right"></dd>
+            <dt id="recap-cartes-libelle" class="text-sm text-roussel-gris" hidden>Dont cartes imprimées</dt>
+            <dd id="recap-cartes" class="text-right text-sm text-roussel-gris" hidden></dd>
             <dt>Remise</dt><dd id="recap-remise" class="text-right"></dd>
             <dt>Livraison</dt><dd id="recap-livraison" class="text-right"></dd>
             <dt class="font-bold">Total</dt><dd id="recap-total" class="text-right text-lg font-bold text-roussel-rose"></dd>

@@ -1,7 +1,7 @@
 // Composition d'un bouquet : taille, vase et carte, puis ajout au panier.
 
 import { formaterPrix } from "./outils.js";
-import { prixUnitaire } from "./prix.js";
+import { nombreCartes, prixUnitaire } from "./prix.js";
 
 // Choix en cours dans le formulaire de composition.
 const options = { taille: "petit", vase: false, carte: false, message: "" };
@@ -32,8 +32,7 @@ export function preparerComposition(optionsCatalogue, surAjout) {
   document.querySelector("#libelle-vase").textContent =
     reglesOptions.vase.libelle + " (+ " + formaterPrix(reglesOptions.vase.prix) + ")";
   document.querySelector("#libelle-carte").textContent =
-    reglesOptions.carte.libelle + " (+ " + formaterPrix(reglesOptions.carte.prix) + ")";
-  document.querySelector("#message-carte").maxLength = reglesOptions.carte.longueurMax;
+    reglesOptions.carte.libelle + " (+ " + formaterPrix(reglesOptions.carte.prix) + " par carte imprimée)";
 
   document.querySelector("#form-composition").addEventListener("change", lireFormulaire);
   document.querySelector("#message-carte").addEventListener("input", lireFormulaire);
@@ -62,7 +61,7 @@ function remplirFormulaire() {
   document.querySelector("#option-vase").checked = options.vase;
   document.querySelector("#option-carte").checked = options.carte;
   document.querySelector("#message-carte").value = options.message;
-  document.querySelector("#zone-message").hidden = !options.carte;
+  afficherNombreCartes();
 }
 
 // Lit le formulaire après chaque changement.
@@ -72,9 +71,17 @@ function lireFormulaire() {
   options.vase = document.querySelector("#option-vase").checked;
   options.carte = document.querySelector("#option-carte").checked;
   const message = document.querySelector("#message-carte").value;
-  options.message = options.carte ? message.slice(0, reglesOptions.carte.longueurMax) : "";
-  document.querySelector("#zone-message").hidden = !options.carte;
+  options.message = options.carte ? message : "";
+  afficherNombreCartes();
   afficherPrixComposition();
+}
+
+function afficherNombreCartes() {
+  document.querySelector("#zone-message").hidden = !options.carte;
+  const indicateur = document.querySelector("#nombre-cartes");
+  const nombre = nombreCartes(options.message);
+  const texte = nombre === 1 ? "1 carte nécessaire" : nombre + " cartes nécessaires";
+  if (indicateur.textContent !== texte) indicateur.textContent = texte;
 }
 
 // Affiche le prix du bouquet tel qu'il est composé.

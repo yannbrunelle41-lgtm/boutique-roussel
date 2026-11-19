@@ -2,7 +2,7 @@
 // Charge les données, prépare la page et recalcule tout à chaque changement.
 
 import { lireJson, maintenant } from "./outils.js";
-import { chargerCatalogue, sousTotal, totalCommande } from "./prix.js";
+import { chargerCatalogue, detailCartes, sousTotal, totalCommande } from "./prix.js";
 import { chargerPromos, appliquerPromo } from "./promo.js";
 import { chargerReglesLivraison, fraisLivraison, joursDeLivraison, momentsDeLivraison, zonePour } from "./livraison.js";
 import { lignesPanier, remplacerLignes, ajouterAuPanier, changerQuantite, supprimerLigne, viderPanier } from "./panier.js";
@@ -106,7 +106,7 @@ function rafraichir() {
     }
   }
   const frais = etat.codePostal.trim().length === 5 ? fraisLivraison(etat.codePostal, montant) : undefined;
-  afficherRecap({ montant, remise, frais, total: totalCommande(montant, remise, frais) });
+  afficherRecap({ montant, cartes: detailCartes(lignes), remise, frais, total: totalCommande(montant, remise, frais) });
   sauverPanier(lignes, etat.codePromo);
 }
 
